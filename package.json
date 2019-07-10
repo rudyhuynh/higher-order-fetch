@@ -1,0 +1,40 @@
+{
+  "name": "higer-order-fetch",
+  "version": "1.0.0",
+  "description": "Proof of concept for higher-order fetch",
+  "repository": "https://github.com/rudyhuynh/higher-order-fetch",
+  "author": "rudyhuynh",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest",
+    "pretest": "npm run build",
+    "eslint": "eslint ./src"
+  },
+  "jest": {
+    "setupFiles": [
+      "./jest/globals.js"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.*"
+    ],
+    "collectCoverage": true
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "eslint": "6.0.1",
+    "eslint-config-prettier": "6.0.0",
+    "eslint-plugin-jest": "^22.7.2",
+    "rollup": "^1.0.0",
+    "rollup-plugin-babel": "^4.2.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0"
+  },
+  "peerDependencies": {
+    "rxjs": "^6.1.0",
+    "rxjs-compat": "^6.1.0"
+  }
+}
