@@ -1,7 +1,7 @@
 {
   "name": "higer-order-fetch",
-  "version": "1.0.0",
-  "description": "Proof of concept for higher-order fetch",
+  "version": "0.0.1",
+  "description": "Using fetch with composable logic",
   "repository": "https://github.com/rudyhuynh/higher-order-fetch",
   "author": "rudyhuynh",
   "license": "MIT",
@@ -34,7 +34,6 @@
     "rollup-plugin-node-resolve": "^4.0.0"
   },
   "peerDependencies": {
-    "rxjs": "^6.1.0",
-    "rxjs-compat": "^6.1.0"
+    "rxjs": "^6.5.2"
   }
 }

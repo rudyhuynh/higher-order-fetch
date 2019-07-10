@@ -2,13 +2,13 @@ import resolve from "rollup-plugin-node-resolve";
 import commonjs from "rollup-plugin-commonjs";
 import babel from "rollup-plugin-babel";
 import pkg from "./package.json";
+const fs = require("fs");
 
 function build({ input, output, external }) {
   return [
     // browser-friendly UMD build
     {
       input: input,
-      external,
       output: {
         name: output.name,
         dir: output.dir,
@@ -46,6 +46,8 @@ function build({ input, output, external }) {
   ];
 }
 
+const exceptHOFs = ["onErrorRetryHOF"];
+
 export default [
   ...build({
     input: "src/utils/pipe",
@@ -54,19 +56,29 @@ export default [
       dir: "lib/utils"
     }
   }),
-  ...build({
-    input: "src/hofs/defaultHeadersHOF",
-    output: {
-      name: "defaultHeadersHOF",
-      dir: "lib"
-    }
-  }),
+  ...fs
+    .readdirSync("./src/hofs")
+    .filter(file => !file.endsWith("test.js"))
+    .map(file => file.slice(0, -3))
+    .filter(fileName => !exceptHOFs.includes(fileName))
+    .map(fileName =>
+      build({
+        input: "src/hofs/" + fileName,
+        output: {
+          name: "fileName",
+          dir: "lib"
+        }
+      })
+    )
+    .reduce(function(a, b) {
+      return a.concat(b);
+    }, []),
   ...build({
     input: "src/hofs/onErrorRetryHOF",
     output: {
       name: "onErrorRetryHOF",
       dir: "lib"
     },
-    external: ["rxjs/Observable"]
+    external: ["rxjs", "rxjs/operators"]
   })
 ];

@@ -1,11 +1,7 @@
-import { Observable } from "rxjs/Observable";
-import "rxjs/add/observable/defer";
-import "rxjs/add/observable/fromPromise";
-import "rxjs/add/observable/of";
-import "rxjs/add/observable/throw";
-import "rxjs/add/operator/retryWhen";
-import "rxjs/add/operator/mergeMap";
-import "rxjs/add/operator/delay";
+import { defer, from, throwError, of } from "rxjs";
+import { retryWhen, mergeMap, delay } from "rxjs/operators";
+
+// TODO - use pipe
 
 export const MAX_RETRY = 3;
 const RETRY_DELAY = 500;
@@ -19,23 +15,27 @@ const RETRY_DELAY = 500;
 export const onErrorRetryHOF = fetch => (input, init = {}) => {
   if (!init.method || init.method.toUpperCase() === "GET") {
     let count = 0;
-    return Observable.defer(() => {
-      return Observable.fromPromise(
+    return defer(() => {
+      return from(
         fetch(input, init).then(resp => {
           if ((resp.status + "").startsWith("5")) throw resp;
           return resp;
         })
       );
     })
-      .retryWhen(errors => {
-        return errors.mergeMap(error => {
-          if (++count >= MAX_RETRY) {
-            return Observable.throw(error);
-          } else {
-            return Observable.of(error).delay(RETRY_DELAY);
-          }
-        });
-      })
+      .pipe(
+        retryWhen(errors => {
+          return errors.pipe(
+            mergeMap(error => {
+              if (++count >= MAX_RETRY) {
+                return throwError(error);
+              } else {
+                return of(error).pipe(delay(RETRY_DELAY));
+              }
+            })
+          );
+        })
+      )
       .toPromise()
       .then(
         resp => resp,
