@@ -56,7 +56,13 @@ import fetchHelper from "./path/to/fetchHelper.js";
 fetchHelper.fetch("http://my.url/data").then(/* ... */);
 ```
 
+## Example
+
 Checkout [the example](https://github.com/rudyhuynh/higher-order-fetch/tree/master/example) for a recommended fetch setup and usage
+
+## API
+
+[https://rudyhuynh.github.io/higher-order-fetch/#onerrorretry](https://rudyhuynh.github.io/higher-order-fetch/#onerrorretry)
 
 ## LISCENE
 

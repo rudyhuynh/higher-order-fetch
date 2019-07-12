@@ -6,10 +6,14 @@ const defaultOptions = { maxRetry: 3, delayMs: 500 };
 const get = (obj, field, defaultValue) => (obj || {})[field] || defaultValue;
 
 /**
- *
  * Creat a fetch which retries when:
  * + GET with 5XX error
  * + Network error
+ *
+ * Before import this, you have to install `rxjs` to your project:
+ * ```
+ * npm install rxjs
+ * ```
  * @requires `rxjs`
  * @example
  * import {onErrorRetry} from 'higher-order-fetch/hofs/onErrorRetry'
