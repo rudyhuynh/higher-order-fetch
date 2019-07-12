@@ -62,7 +62,7 @@ Checkout [the example](https://github.com/rudyhuynh/higher-order-fetch/tree/mast
 
 ## API
 
-[https://rudyhuynh.github.io/higher-order-fetch/#onerrorretry](https://rudyhuynh.github.io/higher-order-fetch/#onerrorretry)
+[https://rudyhuynh.github.io/higher-order-fetch](https://rudyhuynh.github.io/higher-order-fetch)
 
 ## LISCENE
 
