@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset='utf-8'>
-  <title>higher-order-fetch 0.0.4 | Documentation</title>
+  <title>higher-order-fetch 0.0.6 | Documentation</title>
   <meta name='description' content='Using fetch with composable logic'>
   <meta name='viewport' content='width=device-width,initial-scale=1'>
   <link href='assets/bass.css' rel='stylesheet'>
@@ -15,7 +15,7 @@
       <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
         <div class='py1 px2'>
           <h3 class='mb0 no-anchor'>higher-order-fetch</h3>
-          <div class='mb1'><code>0.0.4</code></div>
+          <div class='mb1'><code>0.0.6</code></div>
           <input
             placeholder='Filter'
             id='filter-input'
@@ -26,9 +26,9 @@
               
                 
                 <li><a
-                  href='#bypasscache'
+                  href='#defaultheaders'
                   class="">
-                  bypassCache
+                  defaultHeaders
                   
                 </a>
                 
@@ -36,9 +36,9 @@
               
                 
                 <li><a
-                  href='#defaultheaders'
+                  href='#interceptor'
                   class="">
-                  defaultHeaders
+                  interceptor
                   
                 </a>
                 
@@ -76,6 +76,16 @@
               
                 
                 <li><a
+                  href='#logger'
+                  class="">
+                  logger
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
                   href='#onerrorretry'
                   class="">
                   onErrorRetry
@@ -99,17 +109,17 @@
   
   <div class='clearfix'>
     
-    <h3 class='fl m0' id='bypasscache'>
-      bypassCache
+    <h3 class='fl m0' id='defaultheaders'>
+      defaultHeaders
     </h3>
     
     
   </div>
   
 
-  <p>Create a fetch which bypass cache</p>
+  <p>Add default headers]</p>
 
-    <div class='pre p1 fill-light mt0'>bypassCache</div>
+    <div class='pre p1 fill-light mt0'>defaultHeaders</div>
   
   
 
@@ -126,7 +136,8 @@
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>fetch</span> <code class='quiet'>(any)</code>
+            <span class='code bold'>defaultHeaders</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>?
+            = <code>{}</code>)</code>
 	    
           </div>
           
@@ -138,9 +149,35 @@
   
 
   
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
+        a fetch-like function
+
+      
+    
+  
 
   
 
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> {addDefaultHeader, defaultHeaders} <span class="hljs-keyword">from</span> <span class="hljs-string">'higher-order-fetch/hofs/defaultHeaders'</span>
+
+<span class="hljs-keyword">const</span> fetch = defaultHeaders({
+ <span class="hljs-string">"Content-Type"</span>: <span class="hljs-string">"application/json"</span>,
+})(<span class="hljs-built_in">window</span>.fetch)
+
+<span class="hljs-comment">// called after login success:</span>
+addDefaultHeader(<span class="hljs-string">'Authorization'</span>, <span class="hljs-string">'Basic Ym9zY236Ym9zY28='</span>)
+
+<span class="hljs-comment">// below request should have 2 headers added from above:</span>
+fetch(<span class="hljs-string">'http://example.com/data'</span>)
+.then(<span class="hljs-function"><span class="hljs-params">response</span> =&gt;</span> response.json())
+.then(<span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> { ... })</pre>
+    
   
 
   
@@ -160,49 +197,59 @@
   
   <div class='clearfix'>
     
-    <h3 class='fl m0' id='defaultheaders'>
-      defaultHeaders
+    <h3 class='fl m0' id='interceptor'>
+      interceptor
     </h3>
     
     
   </div>
   
 
-  <p>This higher-order fetch creates a fetch which has some default headers
-defined in DEFAULT_HEADERS</p>
+  <p>Manage interceptors - to do something before or after every fetch.
+Use this with <a href="addBeforeRequestInterceptor()">addBeforeRequestInterceptor()</a> and <a href="addAfterResonseInterceptor()">addAfterResonseInterceptor()</a></p>
 
-    <div class='pre p1 fill-light mt0'>defaultHeaders</div>
-  
-  
-
-  
-  
-  
-  
+    <div class='pre p1 fill-light mt0'>interceptor</div>
   
   
 
   
-    <div class='py1 quiet mt1 prose-big'>Parameters</div>
-    <div class='prose'>
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
       
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>defaultHeaders</span> <code class='quiet'>(any)</code>
-	    
-          </div>
-          
-        </div>
-      
-    </div>
-  
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> {
+ addBeforeRequestInterceptor,
+ addAfterResonseInterceptor,
+ interceptor
+} <span class="hljs-keyword">from</span> <span class="hljs-string">'higher-order-fetch/hofs/interceptor'</span>
 
-  
+<span class="hljs-keyword">const</span> fetch = interceptor()(<span class="hljs-built_in">window</span>.fetch)
 
-  
+addBeforeRequestInterceptor(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+ Loader.show()
+})
+addAfterResonseInterceptor(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+ Loader.hide()
+})
 
-  
-
+fetch(<span class="hljs-string">'http://my.url/data'</span>)
+.then(<span class="hljs-function"><span class="hljs-params">response</span> =&gt;</span> response.json())
+.then(<span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> {...})</pre>
+    
   
 
   
@@ -230,8 +277,9 @@ defined in DEFAULT_HEADERS</p>
   </div>
   
 
-  <p>To define something to do before every fetch request.
-If any interceptor returns false, the process will be stop immediately.</p>
+  <p>To define something to do before every fetch request.<br/>
+If any interceptor returns false, the process will be stop immediately.<br/>
+Only work with <a href="#interceptor">interceptor</a></p>
 
     <div class='pre p1 fill-light mt0'>addBeforeRequestInterceptor(interceptor: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a></div>
   
@@ -301,8 +349,9 @@ If any interceptor returns false, the process will be stop immediately.</p>
   </div>
   
 
-  <p>To define something to do after every fetch response.
-If any interceptor returns false, the process will be stop immediately.</p>
+  <p>To define something to do after every fetch response.<br/>
+If any interceptor returns false, the process will be stop immediately.<br/>
+Only work with <a href="#interceptor">interceptor</a></p>
 
     <div class='pre p1 fill-light mt0'>addAfterResonseInterceptor(interceptor: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>)</div>
   
@@ -364,12 +413,7 @@ If any interceptor returns false, the process will be stop immediately.</p>
   </div>
   
 
-  <p>Make a fetch that return an array of <code>[jsonData, statusCode]</code>
-Example:</p>
-<pre class='hljs'><span class="hljs-keyword">const</span> fetch = jsonResponse()(<span class="hljs-built_in">window</span>.fetch)
-<span class="hljs-keyword">const</span> [data, status] = <span class="hljs-keyword">await</span> fetch(<span class="hljs-string">'http://example.com/data'</span>)
-<span class="hljs-comment">// `data` is a JSON object only if fetch data success with JSON data, otherwise, it is either a Response or an Error.</span>
-<span class="hljs-comment">// `status` is either HTTP Status Code or -1 if fetch fail.</span></pre>
+  <p>Implicitly parse response to json. The fetch created by this will resolve an array of [jsonData, statusCode]</p>
 
     <div class='pre p1 fill-light mt0'>jsonResponse</div>
   
@@ -390,7 +434,7 @@ Example:</p>
           <div>
             <span class='code bold'>suppressWarning</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>
             = <code>false</code>)</code>
-	    default is false, if true, no error will be logged when request or parse JSON fail.
+	    If true, no error will be logged when request error or parse JSON fail.
 
           </div>
           
@@ -406,6 +450,90 @@ Example:</p>
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
         a fetch-like function
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> {jsonResponse} <span class="hljs-keyword">from</span> <span class="hljs-string">'higher-order-fetch/hofs/jsonResponse'</span>
+<span class="hljs-keyword">const</span> fetch = jsonResponse()(<span class="hljs-built_in">window</span>.fetch)
+
+fetch(<span class="hljs-string">'http://example.com/data'</span>)
+.then(<span class="hljs-function">(<span class="hljs-params">[data, status]</span>) =&gt;</span> {<span class="hljs-comment">// no need to call `response.json()` here</span>
+<span class="hljs-comment">// `data` is a JSON object only if fetch data success with JSON data, otherwise, it is either a Response or an Error.</span>
+<span class="hljs-comment">// `status` is either HTTP Status Code or `undefined` if fetch fail.</span>
+})</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='logger'>
+      logger
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Log request and response.</p>
+
+    <div class='pre p1 fill-light mt0'>logger</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>customLog</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>
+            = <code>console.log</code>)</code>
+	    Your custom logger
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
+        A fetch-like function
 
       
     
@@ -440,8 +568,7 @@ Example:</p>
   </div>
   
 
-  <p>NOTE: This requires <code>rxjs</code> as peer dependency.
-Creat a fetch which retries when:</p>
+  <p>Creat a fetch which retries when:</p>
 <ul>
 <li>GET with 5XX error</li>
 <li>Network error</li>
@@ -464,15 +591,7 @@ Creat a fetch which retries when:</p>
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>options</span> <code class='quiet'>(any)</code>
-	    
-          </div>
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>fetch</span> <code class='quiet'>(any)</code>
+            <span class='code bold'>options</span> <code class='quiet'>({maxRetry: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, delayMs: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>}?)</code>
 	    
           </div>
           
@@ -484,9 +603,33 @@ Creat a fetch which retries when:</p>
   
 
   
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
+        a fetch-like function
+
+      
+    
+  
 
   
 
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> {onErrorRetry} <span class="hljs-keyword">from</span> <span class="hljs-string">'higher-order-fetch/hofs/onErrorRetry'</span>
+
+<span class="hljs-keyword">const</span> fetch = onErrorRetry({
+ <span class="hljs-attr">maxRetry</span>: <span class="hljs-number">5</span>,
+ <span class="hljs-attr">delayMs</span>: <span class="hljs-number">3000</span>
+})(<span class="hljs-built_in">window</span>.fetch)
+
+fetch(<span class="hljs-string">'http://example.com'</span>)<span class="hljs-comment">// if request error, will retry maximum 5 times before resolve</span>
+.then(<span class="hljs-function"><span class="hljs-params">response</span> =&gt;</span> {
+ <span class="hljs-comment">// `response` is the last response after all retries or success.</span>
+})</pre>
+    
   
 
   
