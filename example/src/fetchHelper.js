@@ -14,7 +14,7 @@ const fetchHelper = {
   fetch: pipe(
     onErrorRetry(),
     defaultHeaders({
-      // "Content-Type": "application/json"
+      "Content-Type": "application/json"
     }),
     jsonResponse(),
     interceptor()
