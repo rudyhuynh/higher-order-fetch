@@ -1,20 +1,34 @@
 import { defer, from, throwError, of } from "rxjs";
 import { retryWhen, mergeMap, delay } from "rxjs/operators";
 
-const defaultOptions = { maxRetry: 3, maxDelay: 500 };
+const defaultOptions = { maxRetry: 3, delayMs: 500 };
 
 const get = (obj, field, defaultValue) => (obj || {})[field] || defaultValue;
 
 /**
- * NOTE: This requires `rxjs` as peer dependency.
+ *
  * Creat a fetch which retries when:
  * + GET with 5XX error
  * + Network error
- * @param {*} fetch
+ * @requires `rxjs`
+ * @example
+ * import {onErrorRetry} from 'higher-order-fetch/hofs/onErrorRetry'
+ *
+ * const fetch = onErrorRetry({
+ *  maxRetry: 5,
+ *  delayMs: 3000
+ * })(window.fetch)
+ *
+ * fetch('http://example.com')// if request error, will retry maximum 5 times before resolve
+ * .then(response => {
+ *  // `response` is the last response after all retries or success.
+ * })
+ * @param {{maxRetry: number, delayMs: number}} [options]
+ * @returns {function} a fetch-like function
  */
 export const onErrorRetry = options => fetch => (input, init = {}) => {
   const maxRetry = get(options, "maxRetry", defaultOptions.maxRetry);
-  const maxDelay = get(options, "maxDelay", defaultOptions.maxDelay);
+  const delayMs = get(options, "delayMs", defaultOptions.delayMs);
 
   if (!init.method || init.method.toUpperCase() === "GET") {
     let count = 0;
@@ -33,7 +47,7 @@ export const onErrorRetry = options => fetch => (input, init = {}) => {
               if (++count >= maxRetry) {
                 return throwError(error);
               } else {
-                return of(error).pipe(delay(maxDelay));
+                return of(error).pipe(delay(delayMs));
               }
             })
           );

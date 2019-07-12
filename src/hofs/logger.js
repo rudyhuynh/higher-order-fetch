@@ -1,3 +1,8 @@
+/**
+ * Log request and response.
+ * @param {function} customLog Your custom logger
+ * @returns {function} A fetch-like function
+ */
 export const logger = (customLog = console.log) => fetch => async (
   resource,
   init
@@ -10,7 +15,7 @@ export const logger = (customLog = console.log) => fetch => async (
   }
   const response = await fetch(resource, init);
 
-  customLog("\t Status " + response.status);
+  customLog("\t Status " + response.status, response);
 
   return response;
 };

@@ -1,4 +1,4 @@
-import { onErrorRetry, MAX_RETRY } from "./onErrorRetryHOF";
+import { onErrorRetry, MAX_RETRY } from "./onErrorRetry";
 
 describe("on5XXErrorRetryHOF(fetch)", () => {
   test("NOT retry when HTTP method is NOT GET", async () => {

@@ -1,6 +1,3 @@
-/**
- * Create a fetch which bypass cache
- */
 export const bypassCache = fetch => (input, init) => {
   let bypassCacheUrl;
   if (input.includes("?")) {
