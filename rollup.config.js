@@ -1,41 +1,36 @@
 import resolve from "rollup-plugin-node-resolve";
 import commonjs from "rollup-plugin-commonjs";
 import babel from "rollup-plugin-babel";
-import pkg from "./package.json";
+
 const fs = require("fs");
 
 function build({ input, output, external }) {
   return [
-    // browser-friendly UMD build
     {
       input: input,
       output: {
-        name: output.name,
-        dir: output.dir,
-        file: pkg.browser,
+        name: output.file,
+        file: output.file + ".umd.js",
         format: "umd"
       },
       plugins: [
-        resolve(), // so Rollup can find `ms`
-        commonjs(), // so Rollup can convert `ms` to an ES module
+        resolve(),
+        commonjs(),
         babel({
           exclude: ["node_modules/**"]
         })
       ]
     },
 
-    // CommonJS (for Node) and ES module (for bundlers) build.
-    // (We could have three entries in the configuration array
-    // instead of two, but it's quicker to generate multiple
-    // builds from a single configuration where possible, using
-    // an array for the `output` option, where we can specify
-    // `file` and `format` for each target)
     {
       input: input,
       external,
       output: [
-        { file: pkg.main, format: "cjs", dir: output.dir },
-        { file: pkg.module, format: "es", dir: output.dir }
+        { file: output.file + ".cjs.js", format: "cjs" },
+        {
+          file: output.file + ".js",
+          format: "es"
+        }
       ],
       plugins: [
         babel({
@@ -52,8 +47,7 @@ export default [
   ...build({
     input: "src/utils/pipe",
     output: {
-      name: "pipe",
-      dir: "lib/utils"
+      file: "utils/pipe"
     }
   }),
   ...fs
@@ -65,8 +59,7 @@ export default [
       build({
         input: "src/hofs/" + fileName,
         output: {
-          name: "fileName",
-          dir: "lib"
+          file: "hofs/" + fileName
         }
       })
     )
@@ -74,10 +67,9 @@ export default [
       return a.concat(b);
     }, []),
   ...build({
-    input: "src/hofs/onErrorRetryHOF",
+    input: "src/hofs/onErrorRetry",
     output: {
-      name: "onErrorRetryHOF",
-      dir: "lib"
+      file: "hofs/onErrorRetry"
     },
     external: ["rxjs", "rxjs/operators"]
   })

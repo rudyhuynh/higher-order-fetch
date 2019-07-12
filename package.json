@@ -1,5 +1,5 @@
 {
-  "name": "higer-order-fetch",
+  "name": "higher-order-fetch",
   "version": "0.0.2",
   "description": "Using fetch with composable logic",
   "repository": "https://github.com/rudyhuynh/higher-order-fetch",
@@ -25,7 +25,7 @@
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
-    "eslint": "6.0.1",
+    "eslint": "^5.16.0",
     "eslint-config-prettier": "6.0.0",
     "eslint-plugin-jest": "^22.7.2",
     "rollup": "^1.0.0",

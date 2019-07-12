@@ -1,4 +1,4 @@
-import { onErrorRetryHOF, MAX_RETRY } from "./onErrorRetryHOF";
+import { onErrorRetry, MAX_RETRY } from "./onErrorRetryHOF";
 
 describe("on5XXErrorRetryHOF(fetch)", () => {
   test("NOT retry when HTTP method is NOT GET", async () => {
@@ -9,7 +9,7 @@ describe("on5XXErrorRetryHOF(fetch)", () => {
           resolve(expectErrorResponse);
         })
     );
-    const onErrorRetryFetch = onErrorRetryHOF(mockFetch);
+    const onErrorRetryFetch = onErrorRetry(mockFetch);
 
     const actualResponse = await onErrorRetryFetch("http://my.url", {
       method: "POST"
@@ -28,7 +28,7 @@ describe("on5XXErrorRetryHOF(fetch)", () => {
         })
     );
 
-    const onErrorRetryFetch = onErrorRetryHOF(mockFetch);
+    const onErrorRetryFetch = onErrorRetry(mockFetch);
 
     const actualResponse = await onErrorRetryFetch("http://my.url");
 
@@ -45,7 +45,7 @@ describe("on5XXErrorRetryHOF(fetch)", () => {
         })
     );
 
-    const onErrorRetryFetch = onErrorRetryHOF(mockFetch);
+    const onErrorRetryFetch = onErrorRetry(mockFetch);
 
     try {
       await onErrorRetryFetch("http://my.url");
@@ -70,7 +70,7 @@ describe("on5XXErrorRetryHOF(fetch)", () => {
         })
     );
 
-    const onErrorRetryFetch = onErrorRetryHOF(mockFetch);
+    const onErrorRetryFetch = onErrorRetry(mockFetch);
 
     const actualResponse = await onErrorRetryFetch("http://my.url");
 
@@ -92,7 +92,7 @@ describe("on5XXErrorRetryHOF(fetch)", () => {
         })
     );
 
-    const onErrorRetryFetch = onErrorRetryHOF(mockFetch);
+    const onErrorRetryFetch = onErrorRetry(mockFetch);
 
     const actualResponse = await onErrorRetryFetch("http://my.url");
 
@@ -114,7 +114,7 @@ describe("on5XXErrorRetryHOF(fetch)", () => {
         })
     );
 
-    const onErrorRetryFetch = onErrorRetryHOF(mockFetch);
+    const onErrorRetryFetch = onErrorRetry(mockFetch);
 
     const actualResponse = await onErrorRetryFetch("http://my.url");
 

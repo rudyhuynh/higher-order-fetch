@@ -1,15 +1,12 @@
-import {
-  defaultHeadersHOF,
-  mergeWithDefaultHeaders
-} from "./defaultHeadersHOF";
+import { defaultHeaders, mergeWithDefaultHeaders } from "./defaultHeaders";
 
-const defaultHeaders = {
+const DEFAULT_HEADERS = {
   "Content-Type": "application/json"
 };
 
-defaultHeadersHOF = defaultHeadersHOF(defaultHeaders);
+defaultHeaders = defaultHeaders(DEFAULT_HEADERS);
 
-describe("defaultHeadersHOF(fetch)", () => {
+describe("defaultHeaders(fetch)", () => {
   test("should return a fetch that merge with default headers", async () => {
     const url = "https://my.url";
     const init = {
@@ -20,7 +17,7 @@ describe("defaultHeadersHOF(fetch)", () => {
     const response = "response";
     const mockFetch = jest.fn(() => new Promise(resolve => resolve(response)));
 
-    const defaultHeadersFetch = defaultHeadersHOF(mockFetch);
+    const defaultHeadersFetch = defaultHeaders(mockFetch);
 
     const testedResponse = await defaultHeadersFetch(url, init);
 

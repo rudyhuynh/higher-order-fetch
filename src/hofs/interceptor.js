@@ -28,7 +28,7 @@ export function addAfterResonseInterceptor(interceptor) {
   };
 }
 
-export const interceptorHOF = fetch => async (resource, init) => {
+export const interceptor = fetch => async (resource, init) => {
   //run interceptors before each request
   let beforeRequestInterceptorsResult = applyBeforeRequestInterceptors(
     beforeRequestInterceptors

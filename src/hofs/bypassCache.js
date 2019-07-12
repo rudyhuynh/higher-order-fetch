@@ -1,7 +1,7 @@
 /**
  * Create a fetch which bypass cache
  */
-export const bypassCacheHOF = fetch => (input, init) => {
+export const bypassCache = fetch => (input, init) => {
   let bypassCacheUrl;
   if (input.includes("?")) {
     bypassCacheUrl = input + "&_v=" + Math.random();

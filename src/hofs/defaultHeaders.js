@@ -2,17 +2,14 @@
  * This higher-order fetch creates a fetch which has some default headers
  * defined in DEFAULT_HEADERS
  */
-export const defaultHeadersHOF = defaultHeaders => fetch => (
-  input,
-  init = {}
-) => {
+export const defaultHeaders = defaultHeaders => fetch => (input, init = {}) => {
   return fetch(input, {
     ...init,
     headers: mergeWithDefaultHeaders(init.headers, defaultHeaders)
   });
 };
 
-export function mergeWithDefaultHeaders(initHeaders = {}, defaultHeaders) {
+function mergeWithDefaultHeaders(initHeaders = {}, defaultHeaders) {
   let headerObj;
   if (initHeaders instanceof Headers) {
     headerObj = initHeaders
