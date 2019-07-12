@@ -12,7 +12,7 @@
     "pretest": "npm run build",
     "eslint": "eslint ./src",
     "doc": "documentation build src/** -f html -o docs",
-    "public-doc": "npm run doc && node gh-pages.js"
+    "publish-doc": "npm run doc && node gh-pages.js"
   },
   "jest": {
     "setupFiles": [
