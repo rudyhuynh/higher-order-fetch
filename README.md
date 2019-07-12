@@ -1,5 +1,3 @@
-:warning: This library is still an experiment.
-
 # HIGHER-ORDER FETCH
 
 Using `window.fetch()` with some handful composable logic.
@@ -57,6 +55,8 @@ import fetchHelper from "./path/to/fetchHelper.js";
 
 fetchHelper.fetch("http://my.url/data").then(/* ... */);
 ```
+
+Checkout [the example](https://github.com/rudyhuynh/higher-order-fetch/tree/master/example) for a recommended fetch setup and usage
 
 ## LISCENE
 
