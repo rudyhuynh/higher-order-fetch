@@ -51,9 +51,10 @@
  *  // [do this stuff...]
  *  return fetch(...fetchParams)
  * }
- * const doThat = fetch =&gt; (...fetchParams) =&gt; {
+ * const doThat = fetch =&gt; async (...fetchParams) =&gt; {
+ *  const response = await fetch(...fetchParams)
  *  // [do that stuff...]
- *  return fetch(...fetchParams)
+ *  return response
  * }
  *
  * const fetch = pipe(
