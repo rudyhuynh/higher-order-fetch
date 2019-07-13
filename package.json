@@ -1,6 +1,6 @@
 {
   "name": "higher-order-fetch",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Using fetch with composable logic",
   "repository": "https://github.com/rudyhuynh/higher-order-fetch",
   "author": "rudyhuynh",
