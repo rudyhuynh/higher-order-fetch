@@ -1,15 +1,26 @@
 const headers = {};
 
+/**
+ * Dynamically add a default header for every fetch
+ * @ignore
+ * @param {string} key
+ * @param {string} value
+ */
 export const addDefaultHeader = (key, value) => {
   headers[key] = value;
 };
 
+/**
+ * Dynamically remove an added default header
+ * @ignore
+ * @param {string} key
+ */
 export const removeDefaultHeader = key => {
   delete headers[key];
 };
 
 /**
- * Add default headers]
+ * Add HTTP headers to every fetch
  * @example
  * import {addDefaultHeader, defaultHeaders} from 'higher-order-fetch/hofs/defaultHeaders'
  *
@@ -17,7 +28,7 @@ export const removeDefaultHeader = key => {
  *  "Content-Type": "application/json",
  * })(window.fetch)
  *
- * // called after login success:
+ * // assume login success:
  * addDefaultHeader('Authorization', 'Basic Ym9zY236Ym9zY28=')
  *
  * // below request should have 2 headers added from above:

@@ -3,7 +3,7 @@ const afterResponseInterceptors = [];
 
 /**
  * Manage interceptors - to do something before or after every fetch.
- * Use this with {@link addBeforeRequestInterceptor()} and {@link addAfterResonseInterceptor()}
+ * Use this with {@link addBeforeRequestInterceptor} and {@link addAfterResonseInterceptor}
  * @example
  * import {
  *  addBeforeRequestInterceptor,
@@ -55,6 +55,7 @@ export const interceptor = () => fetch => async (resource, init) => {
  * To define something to do before every fetch request.<br/>
  * If any interceptor returns false, the process will be stop immediately.<br/>
  * Only work with {@link interceptor}
+ * @ignore
  * @param {function} interceptor callback that will be called before every request
  * @returns {function} Callback to remove added interceptor
  */
@@ -70,7 +71,9 @@ export function addBeforeRequestInterceptor(interceptor) {
  * To define something to do after every fetch response.<br/>
  * If any interceptor returns false, the process will be stop immediately.<br/>
  * Only work with {@link interceptor}
+ * @ignore
  * @param {function} interceptor callback that will be called after every response
+ * @returns {function} Callback to remove added interceptor
  */
 export function addAfterResonseInterceptor(interceptor) {
   afterResponseInterceptors.push(interceptor);

@@ -1,3 +1,7 @@
+/**
+ * Add random parameter to url for every request to bypass cache. May helpful to deal with caching issue in IE
+ * @ignore
+ */
 export const bypassCache = fetch => (input, init) => {
   let bypassCacheUrl;
   if (input.includes("?")) {

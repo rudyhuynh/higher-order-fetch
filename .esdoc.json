@@ -1,0 +1,23 @@
+{
+  "source": "./src",
+  "destination": "./docs",
+  "plugins": [
+    { "name": "esdoc-standard-plugin" },
+    {
+      "name": "esdoc-importpath-plugin",
+      "option": {
+        "replaces": [
+          { "from": "^src/hofs/", "to": "hofs/" },
+          { "from": "^src/utils/", "to": "utils/" }
+        ]
+      }
+    },
+    {
+      "name": "esdoc-ecmascript-proposal-plugin",
+      "option": {
+        "classProperties": true,
+        "objectRestSpread": true
+      }
+    }
+  ]
+}

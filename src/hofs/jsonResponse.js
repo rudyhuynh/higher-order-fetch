@@ -6,7 +6,8 @@
  *
  * fetch('http://example.com/data')
  * .then(([data, status]) => {// no need to call `response.json()` here
- * // `data` is a JSON object only if fetch data success with JSON data, otherwise, it is either a Response or an Error.
+ * // `data` is a JSON object only if fetch data success with JSON data,
+ * // otherwise, it is either a Response or an Error.
  * // `status` is either HTTP Status Code or `undefined` if fetch fail.
  * })
  *
