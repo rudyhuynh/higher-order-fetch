@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl">
-  <title data-ice="title">Home | higher-order-fetch</title>
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/utils/pipe.js | higher-order-fetch</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -39,44 +39,36 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="higher-order-fetch">HIGHER-ORDER FETCH</h1><p>Using <code>window.fetch()</code> with some handful composable logic.</p>
-<h2 id="why-you-need-this">Why you need this</h2><p>See <a href="https://medium.com/@rudy.huynh286/higher-order-fetch-a-clean-way-to-enhance-fetch-method-21fc2765f76">my article here</a>.</p>
-<p>tldr;</p>
-<p>This library provides a set of handful <code>fetch</code> enhancement as well as gives you the idea to create a <code>fetch</code> method that:</p>
-<ul>
-<li>Fetch data from server, of course</li>
-<li>Enhanced but remained the familiarity of <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch">the Fetch API that documented and provided by the browsers</a>, so that everyone can quickly understand and use it.</li>
-<li>The enhancement can be easily managed, opt in or out depend on the need of your project.</li>
-</ul>
-<h2 id="installation">Installation</h2><pre><code><code class="source-code prettyprint">npm install higher-order-fetch</code>
-</code></pre><p>or</p>
-<pre><code><code class="source-code prettyprint">yarn add higher-order-fetch</code>
-</code></pre><h2 id="how-to-use">How to use</h2><p>Step 1: Compose your fetch:</p>
-<pre><code class="lang-js"><code class="source-code prettyprint">// fetchHelper.js
-import { defaultHeadersHOF } from &quot;higher-order-fetch/lib/defaultHeaders&quot;;
-import { onErrorRetryHOF } from &quot;higher-order-fetch/lib/onErrorRetry&quot;;
-import { myHOF } from &quot;./myHOF&quot;;
-import pipe from &quot;higher-order-fetch/lib/utils/pipe&quot;;
-
-const fetchHelper = {
-  fetch: pipe(
-    onErrorRetryHOF,
-    defaultHeadersHOF,
-    myHOF
-  )(window.fetch)
-};
-export default fetchHelper;</code>
+<div class="content" data-ice="content"><h1 data-ice="title">src/utils/pipe.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * Use this to create your fetch method by pipe multiple higher-order `fetch`es.
+ * @see https://medium.com/free-code-camp/pipe-and-compose-in-javascript-5b04004ac937
+ * @see https://github.com/rudyhuynh/higher-order-fetch/blob/master/example/src/fetchHelper.js
+ * @example
+ * import pipe from &apos;higher-order-fetch/utils/pipe&apos;
+ *
+ * const doThis = fetch =&gt; (...fetchParams) =&gt; {
+ *  // [do this stuff...]
+ *  return fetch(...fetchParams)
+ * }
+ * const doThat = fetch =&gt; (...fetchParams) =&gt; {
+ *  // [do that stuff...]
+ *  return fetch(...fetchParams)
+ * }
+ *
+ * const fetch = pipe(
+ *  doThis,
+ *  doThat
+ * )(window.fetch)
+ *
+ * fetch(&apos;http://example.com/data&apos;).then(response =&gt; {...})
+ * @param  {...function} fns
+ *
+ */
+const pipe = (...fns) =&gt; x =&gt; fns.reduce((v, f) =&gt; f(v), x);
+export default pipe;
 </code></pre>
-<p>Step 2: Use it</p>
-<pre><code class="lang-js"><code class="source-code prettyprint">// somewhere-that-need-to-fetch-data.js
-import fetchHelper from &quot;./path/to/fetchHelper.js&quot;;
 
-fetchHelper.fetch(&quot;http://my.url/data&quot;).then(/* ... */);</code>
-</code></pre>
-<h2 id="example">Example</h2><p>Checkout <a href="https://github.com/rudyhuynh/higher-order-fetch/tree/master/example">the example</a> for a recommended fetch setup and usage</p>
-<h2 id="api">API</h2><p><a href="https://rudyhuynh.github.io/higher-order-fetch">https://rudyhuynh.github.io/higher-order-fetch</a></p>
-<h2 id="liscene">LISCENE</h2><p>MIT</p>
-</div>
 </div>
 
 <footer class="footer">

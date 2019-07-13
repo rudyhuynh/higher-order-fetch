@@ -1,0 +1,1306 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/hofs/bypassCache.js",
+    "content": "/**\r\n * Add random parameter to url for every request to bypass cache. May helpful to deal with caching issue in IE\r\n * @ignore\r\n */\r\nexport const bypassCache = fetch => (input, init) => {\r\n  let bypassCacheUrl;\r\n  if (input.includes(\"?\")) {\r\n    bypassCacheUrl = input + \"&_v=\" + Math.random();\r\n  } else {\r\n    bypassCacheUrl = input + \"?_v=\" + Math.random();\r\n  }\r\n  return fetch(bypassCacheUrl, init);\r\n};\r\n",
+    "static": true,
+    "longname": "/Users/rudyhuynh/Documents/mine/higher-order-fetch/src/hofs/bypassCache.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "function",
+    "name": "bypassCache",
+    "memberof": "src/hofs/bypassCache.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/hofs/bypassCache.js~bypassCache",
+    "access": "public",
+    "export": true,
+    "importPath": "higher-order-fetch/hofs/bypassCache.js",
+    "importStyle": "{bypassCache}",
+    "description": "Add random parameter to url for every request to bypass cache. May helpful to deal with caching issue in IE",
+    "lineNumber": 5,
+    "ignore": true,
+    "params": [
+      {
+        "name": "fetch",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 50,
+    "kind": "file",
+    "name": "src/hofs/defaultHeaders.js",
+    "content": "const headers = {};\r\n\r\n/**\r\n * Dynamically add a default header for every fetch\r\n * @ignore\r\n * @param {string} key\r\n * @param {string} value\r\n */\r\nexport const addDefaultHeader = (key, value) => {\r\n  headers[key] = value;\r\n};\r\n\r\n/**\r\n * Dynamically remove an added default header\r\n * @ignore\r\n * @param {string} key\r\n */\r\nexport const removeDefaultHeader = key => {\r\n  delete headers[key];\r\n};\r\n\r\n/**\r\n * Add HTTP headers to every fetch\r\n * @example\r\n * import {addDefaultHeader, defaultHeaders} from 'higher-order-fetch/hofs/defaultHeaders'\r\n *\r\n * const fetch = defaultHeaders({\r\n *  \"Content-Type\": \"application/json\",\r\n * })(window.fetch)\r\n *\r\n * // assume login success:\r\n * addDefaultHeader('Authorization', 'Basic Ym9zY236Ym9zY28=')\r\n *\r\n * // below request should have 2 headers added from above:\r\n * fetch('http://example.com/data')\r\n * .then(response => response.json())\r\n * .then(data => { ... })\r\n * @param {object} [defaultHeaders]\r\n * @returns {function} a fetch-like function\r\n */\r\nexport const defaultHeaders = (defaultHeaders = {}) => fetch => (\r\n  input,\r\n  init = {}\r\n) => {\r\n  return fetch(input, {\r\n    ...init,\r\n    headers: mergeWithDefaultHeaders(init.headers, {\r\n      ...defaultHeaders,\r\n      ...headers\r\n    })\r\n  });\r\n};\r\n\r\nfunction mergeWithDefaultHeaders(initHeaders = {}, defaultHeaders) {\r\n  let headerObj;\r\n  if (initHeaders instanceof Headers) {\r\n    headerObj = initHeaders\r\n      .entries()\r\n      //convert array of entries into object:\r\n      .reduce((acc, val) => ({ ...acc, [val[0]]: val[1] }), {});\r\n  } else {\r\n    headerObj = initHeaders;\r\n  }\r\n\r\n  return {\r\n    ...defaultHeaders,\r\n    ...headerObj\r\n  };\r\n}\r\n",
+    "static": true,
+    "longname": "/Users/rudyhuynh/Documents/mine/higher-order-fetch/src/hofs/defaultHeaders.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 51,
+    "kind": "variable",
+    "name": "headers",
+    "memberof": "src/hofs/defaultHeaders.js",
+    "static": true,
+    "longname": "src/hofs/defaultHeaders.js~headers",
+    "access": "public",
+    "export": false,
+    "importPath": "higher-order-fetch/hofs/defaultHeaders.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 52,
+    "kind": "function",
+    "name": "addDefaultHeader",
+    "memberof": "src/hofs/defaultHeaders.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/hofs/defaultHeaders.js~addDefaultHeader",
+    "access": "public",
+    "export": true,
+    "importPath": "higher-order-fetch/hofs/defaultHeaders.js",
+    "importStyle": "{addDefaultHeader}",
+    "description": "Dynamically add a default header for every fetch",
+    "lineNumber": 9,
+    "ignore": true,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "key",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "value",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 53,
+    "kind": "function",
+    "name": "removeDefaultHeader",
+    "memberof": "src/hofs/defaultHeaders.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/hofs/defaultHeaders.js~removeDefaultHeader",
+    "access": "public",
+    "export": true,
+    "importPath": "higher-order-fetch/hofs/defaultHeaders.js",
+    "importStyle": "{removeDefaultHeader}",
+    "description": "Dynamically remove an added default header",
+    "lineNumber": 18,
+    "ignore": true,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "key",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 54,
+    "kind": "function",
+    "name": "defaultHeaders",
+    "memberof": "src/hofs/defaultHeaders.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/hofs/defaultHeaders.js~defaultHeaders",
+    "access": "public",
+    "export": true,
+    "importPath": "higher-order-fetch/hofs/defaultHeaders.js",
+    "importStyle": "{defaultHeaders}",
+    "description": "Add HTTP headers to every fetch",
+    "examples": [
+      "import {addDefaultHeader, defaultHeaders} from 'higher-order-fetch/hofs/defaultHeaders'\n\nconst fetch = defaultHeaders({\n \"Content-Type\": \"application/json\",\n})(window.fetch)\n\n// assume login success:\naddDefaultHeader('Authorization', 'Basic Ym9zY236Ym9zY28=')\n\n// below request should have 2 headers added from above:\nfetch('http://example.com/data')\n.then(response => response.json())\n.then(data => { ... })"
+    ],
+    "lineNumber": 41,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{function} a fetch-like function"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "defaultHeaders",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "function"
+      ],
+      "spread": false,
+      "description": "a fetch-like function"
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "function",
+    "name": "mergeWithDefaultHeaders",
+    "memberof": "src/hofs/defaultHeaders.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/hofs/defaultHeaders.js~mergeWithDefaultHeaders",
+    "access": "public",
+    "export": false,
+    "importPath": "higher-order-fetch/hofs/defaultHeaders.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 54,
+    "undocument": true,
+    "params": [
+      {
+        "name": "initHeaders",
+        "optional": true,
+        "types": [
+          "{}"
+        ],
+        "defaultRaw": {},
+        "defaultValue": "{}"
+      },
+      {
+        "name": "defaultHeaders",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "{...defaultHeaders: Object, ...headerObj: Object}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 56,
+    "kind": "file",
+    "name": "src/hofs/interceptor.js",
+    "content": "const beforeRequestInterceptors = [];\nconst afterResponseInterceptors = [];\n\n/**\n * Manage interceptors - to do something before or after every fetch.\n * Use this with {@link addBeforeRequestInterceptor} and {@link addAfterResonseInterceptor}\n * @example\n * import {\n *  addBeforeRequestInterceptor,\n *  addAfterResonseInterceptor,\n *  interceptor\n * } from 'higher-order-fetch/hofs/interceptor'\n *\n * const fetch = interceptor()(window.fetch)\n *\n * addBeforeRequestInterceptor(() => {\n *  Loader.show()\n * })\n * addAfterResonseInterceptor(() => {\n *  Loader.hide()\n * })\n *\n * fetch('http://my.url/data')\n * .then(response => response.json())\n * .then(data => {...})\n */\nexport const interceptor = () => fetch => async (resource, init) => {\n  //run interceptors before each request\n  let beforeRequestInterceptorsResult = applyBeforeRequestInterceptors(\n    beforeRequestInterceptors\n  );\n  if (beforeRequestInterceptorsResult === false) {\n    throw new Error(\n      \"Fetch Promise was canceled by interceptor before requested\"\n    );\n  }\n\n  const response = await fetch(resource, init);\n\n  // run interceptors after each requests\n  let afterResponseInterceptorsResult = applyAfterResponseInterceptors(\n    response,\n    afterResponseInterceptors\n  );\n  if (afterResponseInterceptorsResult === false) {\n    throw new Error(\n      \"Fetch Promise was canceled by interceptor after responded\"\n    );\n  }\n\n  return response;\n};\n\n/**\n * To define something to do before every fetch request.<br/>\n * If any interceptor returns false, the process will be stop immediately.<br/>\n * Only work with {@link interceptor}\n * @ignore\n * @param {function} interceptor callback that will be called before every request\n * @returns {function} Callback to remove added interceptor\n */\nexport function addBeforeRequestInterceptor(interceptor) {\n  beforeRequestInterceptors.push(interceptor);\n  return () => {\n    const index = beforeRequestInterceptors.indexOf(interceptor);\n    beforeRequestInterceptors.splice(index, 1);\n  };\n}\n\n/**\n * To define something to do after every fetch response.<br/>\n * If any interceptor returns false, the process will be stop immediately.<br/>\n * Only work with {@link interceptor}\n * @ignore\n * @param {function} interceptor callback that will be called after every response\n * @returns {function} Callback to remove added interceptor\n */\nexport function addAfterResonseInterceptor(interceptor) {\n  afterResponseInterceptors.push(interceptor);\n  return () => {\n    const index = afterResponseInterceptors.indexOf(interceptor);\n    afterResponseInterceptors.splice(index, 1);\n  };\n}\n\nfunction applyBeforeRequestInterceptors(interceptors) {\n  interceptors.forEach(interceptor => {\n    try {\n      const interceptorResult = interceptor();\n      if (interceptorResult === false) {\n        console.error(\n          \"Interceptor \",\n          interceptor,\n          \" has cancel signal. This makes the request stop immediately.\"\n        );\n        return false;\n      }\n    } catch (e) {\n      console.error(`Error from interceptor ${interceptor}`, e);\n      return false;\n    }\n  });\n}\n\nfunction applyAfterResponseInterceptors(response, interceptors) {\n  interceptors.forEach(interceptor => {\n    try {\n      const interceptorResult = interceptor(response);\n      if (interceptorResult === false) {\n        console.error(\n          \"Interceptor \",\n          interceptor,\n          \" has cancel signal. This makes the request stop immediately.\"\n        );\n        return false;\n      }\n    } catch (e) {\n      console.error(`Error from interceptor ${interceptor}`, e);\n      return false;\n    }\n  });\n}\n",
+    "static": true,
+    "longname": "/Users/rudyhuynh/Documents/mine/higher-order-fetch/src/hofs/interceptor.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 57,
+    "kind": "variable",
+    "name": "beforeRequestInterceptors",
+    "memberof": "src/hofs/interceptor.js",
+    "static": true,
+    "longname": "src/hofs/interceptor.js~beforeRequestInterceptors",
+    "access": "public",
+    "export": false,
+    "importPath": "higher-order-fetch/hofs/interceptor.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 58,
+    "kind": "variable",
+    "name": "afterResponseInterceptors",
+    "memberof": "src/hofs/interceptor.js",
+    "static": true,
+    "longname": "src/hofs/interceptor.js~afterResponseInterceptors",
+    "access": "public",
+    "export": false,
+    "importPath": "higher-order-fetch/hofs/interceptor.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 59,
+    "kind": "function",
+    "name": "interceptor",
+    "memberof": "src/hofs/interceptor.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/hofs/interceptor.js~interceptor",
+    "access": "public",
+    "export": true,
+    "importPath": "higher-order-fetch/hofs/interceptor.js",
+    "importStyle": "{interceptor}",
+    "description": "Manage interceptors - to do something before or after every fetch.\nUse this with {@link addBeforeRequestInterceptor} and {@link addAfterResonseInterceptor}",
+    "examples": [
+      "import {\n addBeforeRequestInterceptor,\n addAfterResonseInterceptor,\n interceptor\n} from 'higher-order-fetch/hofs/interceptor'\n\nconst fetch = interceptor()(window.fetch)\n\naddBeforeRequestInterceptor(() => {\n Loader.show()\n})\naddAfterResonseInterceptor(() => {\n Loader.hide()\n})\n\nfetch('http://my.url/data')\n.then(response => response.json())\n.then(data => {...})"
+    ],
+    "lineNumber": 27,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 60,
+    "kind": "function",
+    "name": "addBeforeRequestInterceptor",
+    "memberof": "src/hofs/interceptor.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/hofs/interceptor.js~addBeforeRequestInterceptor",
+    "access": "public",
+    "export": true,
+    "importPath": "higher-order-fetch/hofs/interceptor.js",
+    "importStyle": "{addBeforeRequestInterceptor}",
+    "description": "To define something to do before every fetch request.<br/>\nIf any interceptor returns false, the process will be stop immediately.<br/>\nOnly work with {@link interceptor}",
+    "lineNumber": 62,
+    "ignore": true,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{function} Callback to remove added interceptor"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "interceptor",
+        "description": "callback that will be called before every request"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "function"
+      ],
+      "spread": false,
+      "description": "Callback to remove added interceptor"
+    }
+  },
+  {
+    "__docId__": 61,
+    "kind": "function",
+    "name": "addAfterResonseInterceptor",
+    "memberof": "src/hofs/interceptor.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/hofs/interceptor.js~addAfterResonseInterceptor",
+    "access": "public",
+    "export": true,
+    "importPath": "higher-order-fetch/hofs/interceptor.js",
+    "importStyle": "{addAfterResonseInterceptor}",
+    "description": "To define something to do after every fetch response.<br/>\nIf any interceptor returns false, the process will be stop immediately.<br/>\nOnly work with {@link interceptor}",
+    "lineNumber": 78,
+    "ignore": true,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{function} Callback to remove added interceptor"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "interceptor",
+        "description": "callback that will be called after every response"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "function"
+      ],
+      "spread": false,
+      "description": "Callback to remove added interceptor"
+    }
+  },
+  {
+    "__docId__": 62,
+    "kind": "function",
+    "name": "applyBeforeRequestInterceptors",
+    "memberof": "src/hofs/interceptor.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/hofs/interceptor.js~applyBeforeRequestInterceptors",
+    "access": "public",
+    "export": false,
+    "importPath": "higher-order-fetch/hofs/interceptor.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 86,
+    "undocument": true,
+    "params": [
+      {
+        "name": "interceptors",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 63,
+    "kind": "function",
+    "name": "applyAfterResponseInterceptors",
+    "memberof": "src/hofs/interceptor.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/hofs/interceptor.js~applyAfterResponseInterceptors",
+    "access": "public",
+    "export": false,
+    "importPath": "higher-order-fetch/hofs/interceptor.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 105,
+    "undocument": true,
+    "params": [
+      {
+        "name": "response",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "interceptors",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 64,
+    "kind": "file",
+    "name": "src/hofs/jsonResponse.js",
+    "content": "/**\n * Implicitly parse response to json. The fetch created by this will resolve an array of [jsonData, statusCode]\n * @example\n * import {jsonResponse} from 'higher-order-fetch/hofs/jsonResponse'\n * const fetch = jsonResponse()(window.fetch)\n *\n * fetch('http://example.com/data')\n * .then(([data, status]) => {// no need to call `response.json()` here\n * // `data` is a JSON object only if fetch data success with JSON data,\n * // otherwise, it is either a Response or an Error.\n * // `status` is either HTTP Status Code or `undefined` if fetch fail.\n * })\n *\n * @param {boolean} suppressWarning If true, no error will be logged when request error or parse JSON fail.\n * @returns {function} a fetch-like function\n */\nexport const jsonResponse = (suppressWarning = false) => fetch => async (\n  ...fetchParams\n) => {\n  let response;\n  try {\n    response = await fetch(...fetchParams);\n    const json = await response.json();\n    return [json, response.status];\n  } catch (e) {\n    !suppressWarning && console.warn(e);\n    return response ? [response, response.status] : [e, undefined];\n  }\n};\n",
+    "static": true,
+    "longname": "/Users/rudyhuynh/Documents/mine/higher-order-fetch/src/hofs/jsonResponse.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 65,
+    "kind": "function",
+    "name": "jsonResponse",
+    "memberof": "src/hofs/jsonResponse.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/hofs/jsonResponse.js~jsonResponse",
+    "access": "public",
+    "export": true,
+    "importPath": "higher-order-fetch/hofs/jsonResponse.js",
+    "importStyle": "{jsonResponse}",
+    "description": "Implicitly parse response to json. The fetch created by this will resolve an array of [jsonData, statusCode]",
+    "examples": [
+      "import {jsonResponse} from 'higher-order-fetch/hofs/jsonResponse'\nconst fetch = jsonResponse()(window.fetch)\n\nfetch('http://example.com/data')\n.then(([data, status]) => {// no need to call `response.json()` here\n// `data` is a JSON object only if fetch data success with JSON data,\n// otherwise, it is either a Response or an Error.\n// `status` is either HTTP Status Code or `undefined` if fetch fail.\n})"
+    ],
+    "lineNumber": 17,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{function} a fetch-like function"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "suppressWarning",
+        "description": "If true, no error will be logged when request error or parse JSON fail."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "function"
+      ],
+      "spread": false,
+      "description": "a fetch-like function"
+    }
+  },
+  {
+    "__docId__": 66,
+    "kind": "file",
+    "name": "src/hofs/logger.js",
+    "content": "/**\n * Log request and response.\n * @param {function} customLog Your custom logger\n * @returns {function} A fetch-like function\n */\nexport const logger = (customLog = console.log) => fetch => async (\n  resource,\n  init\n) => {\n  if (resource instanceof Request) {\n    customLog(resource.method + \" \" + resource.url);\n  } else {\n    const method = init ? init.method || \"GET\" : \"GET\";\n    customLog(method + \" \" + resource);\n  }\n  const response = await fetch(resource, init);\n\n  customLog(\"\\t Status \" + response.status, response);\n\n  return response;\n};\n",
+    "static": true,
+    "longname": "/Users/rudyhuynh/Documents/mine/higher-order-fetch/src/hofs/logger.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 67,
+    "kind": "function",
+    "name": "logger",
+    "memberof": "src/hofs/logger.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/hofs/logger.js~logger",
+    "access": "public",
+    "export": true,
+    "importPath": "higher-order-fetch/hofs/logger.js",
+    "importStyle": "{logger}",
+    "description": "Log request and response.",
+    "lineNumber": 6,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{function} A fetch-like function"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "customLog",
+        "description": "Your custom logger"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "function"
+      ],
+      "spread": false,
+      "description": "A fetch-like function"
+    }
+  },
+  {
+    "__docId__": 68,
+    "kind": "file",
+    "name": "src/hofs/onErrorRetry.js",
+    "content": "import { defer, from, throwError, of } from \"rxjs\";\r\nimport { retryWhen, mergeMap, delay } from \"rxjs/operators\";\r\n\r\nconst defaultOptions = { maxRetry: 3, delayMs: 500 };\r\n\r\nconst get = (obj, field, defaultValue) => (obj || {})[field] || defaultValue;\r\n\r\n/**\r\n * Creat a fetch which retries when:\r\n * + GET with 5XX error\r\n * + Network error\r\n *\r\n * Before import this, you have to install `rxjs` to your project:\r\n * ```\r\n * npm install rxjs\r\n * ```\r\n * @requires `rxjs`\r\n * @example\r\n * import {onErrorRetry} from 'higher-order-fetch/hofs/onErrorRetry'\r\n *\r\n * const fetch = onErrorRetry({\r\n *  maxRetry: 5,\r\n *  delayMs: 3000\r\n * })(window.fetch)\r\n *\r\n * fetch('http://example.com')// if request error, will retry maximum 5 times before resolve\r\n * .then(response => {\r\n *  // `response` is the last response after all retries or success.\r\n * })\r\n * @param {{maxRetry: number, delayMs: number}} [options]\r\n * @returns {function} a fetch-like function\r\n */\r\nexport const onErrorRetry = options => fetch => (input, init = {}) => {\r\n  const maxRetry = get(options, \"maxRetry\", defaultOptions.maxRetry);\r\n  const delayMs = get(options, \"delayMs\", defaultOptions.delayMs);\r\n\r\n  if (!init.method || init.method.toUpperCase() === \"GET\") {\r\n    let count = 0;\r\n    return defer(() => {\r\n      return from(\r\n        fetch(input, init).then(resp => {\r\n          if ((resp.status + \"\").startsWith(\"5\")) throw resp;\r\n          return resp;\r\n        })\r\n      );\r\n    })\r\n      .pipe(\r\n        retryWhen(errors => {\r\n          return errors.pipe(\r\n            mergeMap(error => {\r\n              if (++count >= maxRetry) {\r\n                return throwError(error);\r\n              } else {\r\n                return of(error).pipe(delay(delayMs));\r\n              }\r\n            })\r\n          );\r\n        })\r\n      )\r\n      .toPromise()\r\n      .then(\r\n        resp => resp,\r\n        resp => {\r\n          if (resp.status === 500) return resp;\r\n          throw resp;\r\n        }\r\n      );\r\n  }\r\n  return fetch(input, init);\r\n};\r\n",
+    "static": true,
+    "longname": "/Users/rudyhuynh/Documents/mine/higher-order-fetch/src/hofs/onErrorRetry.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 69,
+    "kind": "variable",
+    "name": "defaultOptions",
+    "memberof": "src/hofs/onErrorRetry.js",
+    "static": true,
+    "longname": "src/hofs/onErrorRetry.js~defaultOptions",
+    "access": "public",
+    "export": false,
+    "importPath": "higher-order-fetch/hofs/onErrorRetry.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"maxRetry\": number, \"delayMs\": number}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 70,
+    "kind": "function",
+    "name": "get",
+    "memberof": "src/hofs/onErrorRetry.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/hofs/onErrorRetry.js~get",
+    "access": "public",
+    "export": false,
+    "importPath": "higher-order-fetch/hofs/onErrorRetry.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "params": [
+      {
+        "name": "obj",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "field",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "defaultValue",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 71,
+    "kind": "function",
+    "name": "onErrorRetry",
+    "memberof": "src/hofs/onErrorRetry.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/hofs/onErrorRetry.js~onErrorRetry",
+    "access": "public",
+    "export": true,
+    "importPath": "higher-order-fetch/hofs/onErrorRetry.js",
+    "importStyle": "{onErrorRetry}",
+    "description": "Creat a fetch which retries when:\n+ GET with 5XX error\n+ Network error\n\nBefore import this, you have to install `rxjs` to your project:\n```\nnpm install rxjs\n```",
+    "examples": [
+      "import {onErrorRetry} from 'higher-order-fetch/hofs/onErrorRetry'\n\nconst fetch = onErrorRetry({\n maxRetry: 5,\n delayMs: 3000\n})(window.fetch)\n\nfetch('http://example.com')// if request error, will retry maximum 5 times before resolve\n.then(response => {\n // `response` is the last response after all retries or success.\n})"
+    ],
+    "lineNumber": 33,
+    "unknown": [
+      {
+        "tagName": "@requires",
+        "tagValue": "`rxjs`"
+      },
+      {
+        "tagName": "@returns",
+        "tagValue": "{function} a fetch-like function"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "{maxRetry: number, delayMs: number}"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "options",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "function"
+      ],
+      "spread": false,
+      "description": "a fetch-like function"
+    }
+  },
+  {
+    "__docId__": 72,
+    "kind": "file",
+    "name": "src/utils/pipe.js",
+    "content": "/**\n * Use this to create your fetch method by pipe multiple higher-order `fetch`es.\n * @see https://medium.com/free-code-camp/pipe-and-compose-in-javascript-5b04004ac937\n * @see https://github.com/rudyhuynh/higher-order-fetch/blob/master/example/src/fetchHelper.js\n * @example\n * import pipe from 'higher-order-fetch/utils/pipe'\n *\n * const doThis = fetch => (...fetchParams) => {\n *  // [do this stuff...]\n *  return fetch(...fetchParams)\n * }\n * const doThat = fetch => (...fetchParams) => {\n *  // [do that stuff...]\n *  return fetch(...fetchParams)\n * }\n *\n * const fetch = pipe(\n *  doThis,\n *  doThat\n * )(window.fetch)\n *\n * fetch('http://example.com/data').then(response => {...})\n * @param  {...function} fns\n *\n */\nconst pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);\nexport default pipe;\n",
+    "static": true,
+    "longname": "/Users/rudyhuynh/Documents/mine/higher-order-fetch/src/utils/pipe.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 73,
+    "kind": "function",
+    "name": "pipe",
+    "memberof": "src/utils/pipe.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/pipe.js~pipe",
+    "access": "public",
+    "export": true,
+    "importPath": "higher-order-fetch/utils/pipe.js",
+    "importStyle": "pipe",
+    "description": "Use this to create your fetch method by pipe multiple higher-order `fetch`es.",
+    "examples": [
+      "import pipe from 'higher-order-fetch/utils/pipe'\n\nconst doThis = fetch => (...fetchParams) => {\n // [do this stuff...]\n return fetch(...fetchParams)\n}\nconst doThat = fetch => (...fetchParams) => {\n // [do that stuff...]\n return fetch(...fetchParams)\n}\n\nconst fetch = pipe(\n doThis,\n doThat\n)(window.fetch)\n\nfetch('http://example.com/data').then(response => {...})"
+    ],
+    "see": [
+      "https://medium.com/free-code-camp/pipe-and-compose-in-javascript-5b04004ac937",
+      "https://github.com/rudyhuynh/higher-order-fetch/blob/master/example/src/fetchHelper.js"
+    ],
+    "lineNumber": 26,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "...function"
+        ],
+        "spread": true,
+        "optional": false,
+        "name": "fns",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "kind": "index",
+    "content": "# HIGHER-ORDER FETCH\r\n\r\nUsing `window.fetch()` with some handful composable logic.\r\n\r\n## Why you need this\r\n\r\nSee [my article here](https://medium.com/@rudy.huynh286/higher-order-fetch-a-clean-way-to-enhance-fetch-method-21fc2765f76).\r\n\r\ntldr;\r\n\r\nThis library provides a set of handful `fetch` enhancement as well as gives you the idea to create a `fetch` method that:\r\n\r\n- Fetch data from server, of course\r\n- Enhanced but remained the familiarity of [the Fetch API that documented and provided by the browsers](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch), so that everyone can quickly understand and use it.\r\n- The enhancement can be easily managed, opt in or out depend on the need of your project.\r\n\r\n## Installation\r\n\r\n```\r\nnpm install higher-order-fetch\r\n```\r\n\r\nor\r\n\r\n```\r\nyarn add higher-order-fetch\r\n```\r\n\r\n## How to use\r\n\r\nStep 1: Compose your fetch:\r\n\r\n```js\r\n// fetchHelper.js\r\nimport { defaultHeadersHOF } from \"higher-order-fetch/lib/defaultHeaders\";\r\nimport { onErrorRetryHOF } from \"higher-order-fetch/lib/onErrorRetry\";\r\nimport { myHOF } from \"./myHOF\";\r\nimport pipe from \"higher-order-fetch/lib/utils/pipe\";\r\n\r\nconst fetchHelper = {\r\n  fetch: pipe(\r\n    onErrorRetryHOF,\r\n    defaultHeadersHOF,\r\n    myHOF\r\n  )(window.fetch)\r\n};\r\nexport default fetchHelper;\r\n```\r\n\r\nStep 2: Use it\r\n\r\n```js\r\n// somewhere-that-need-to-fetch-data.js\r\nimport fetchHelper from \"./path/to/fetchHelper.js\";\r\n\r\nfetchHelper.fetch(\"http://my.url/data\").then(/* ... */);\r\n```\r\n\r\n## Example\r\n\r\nCheckout [the example](https://github.com/rudyhuynh/higher-order-fetch/tree/master/example) for a recommended fetch setup and usage\r\n\r\n## API\r\n\r\n[https://rudyhuynh.github.io/higher-order-fetch](https://rudyhuynh.github.io/higher-order-fetch)\r\n\r\n## LISCENE\r\n\r\nMIT\r\n",
+    "longname": "/Users/rudyhuynh/Documents/mine/higher-order-fetch/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"higher-order-fetch\",\n  \"version\": \"0.0.8\",\n  \"description\": \"Using fetch with composable logic\",\n  \"repository\": \"https://github.com/rudyhuynh/higher-order-fetch\",\n  \"author\": \"rudyhuynh\",\n  \"license\": \"MIT\",\n  \"scripts\": {\n    \"build\": \"rollup -c\",\n    \"dev\": \"rollup -c -w\",\n    \"test\": \"jest\",\n    \"pretest\": \"npm run build\",\n    \"eslint\": \"eslint ./src\",\n    \"esdoc\": \"esdoc\",\n    \"publish-doc\": \"npm run esdoc && node gh-pages.js\"\n  },\n  \"jest\": {\n    \"setupFiles\": [\n      \"./jest/globals.js\"\n    ],\n    \"collectCoverageFrom\": [\n      \"src/**/*.*\"\n    ],\n    \"collectCoverage\": true\n  },\n  \"dependencies\": {},\n  \"devDependencies\": {\n    \"@babel/core\": \"^7.2.2\",\n    \"@babel/preset-env\": \"^7.2.3\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-importpath-plugin\": \"^1.0.2\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"eslint\": \"^5.16.0\",\n    \"eslint-config-prettier\": \"6.0.0\",\n    \"eslint-plugin-jest\": \"^22.7.2\",\n    \"gh-pages\": \"^2.0.1\",\n    \"rollup\": \"^1.0.0\",\n    \"rollup-plugin-babel\": \"^4.2.0\",\n    \"rollup-plugin-commonjs\": \"^9.2.0\",\n    \"rollup-plugin-node-resolve\": \"^4.0.0\"\n  },\n  \"peerDependencies\": {\n    \"rxjs\": \"^6.5.2\"\n  }\n}\n",
+    "longname": "/Users/rudyhuynh/Documents/mine/higher-order-fetch/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]
