@@ -77,17 +77,17 @@ export const removeDefaultHeader = key =&gt; {
  * fetch(&apos;http://example.com/data&apos;)
  * .then(response =&gt; response.json())
  * .then(data =&gt; { ... })
- * @param {object} [defaultHeaders]
+ * @param {object} [_defaultHeaders]
  * @returns {function} a fetch-like function
  */
-export const defaultHeaders = (defaultHeaders = {}) =&gt; fetch =&gt; (
+export const defaultHeaders = (_defaultHeaders = {}) =&gt; fetch =&gt; (
   input,
   init = {}
 ) =&gt; {
   return fetch(input, {
     ...init,
     headers: mergeWithDefaultHeaders(init.headers, {
-      ...defaultHeaders,
+      ..._defaultHeaders,
       ...headers
     })
   });
