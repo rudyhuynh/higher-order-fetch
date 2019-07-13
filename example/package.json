@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "private": true,
   "dependencies": {
-    "higher-order-fetch": "^0.0.10",
+    "higher-order-fetch": "^0.0.11",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-progress-2": "^4.4.3",
