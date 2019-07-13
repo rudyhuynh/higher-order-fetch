@@ -9,9 +9,10 @@
  *  // [do this stuff...]
  *  return fetch(...fetchParams)
  * }
- * const doThat = fetch => (...fetchParams) => {
+ * const doThat = fetch => async (...fetchParams) => {
+ *  const response = await fetch(...fetchParams)
  *  // [do that stuff...]
- *  return fetch(...fetchParams)
+ *  return response
  * }
  *
  * const fetch = pipe(
