@@ -4,10 +4,6 @@ Using `window.fetch()` with some handful composable logic.
 
 ## Why you need this
 
-See [my article here](https://medium.com/@rudy.huynh286/higher-order-fetch-a-clean-way-to-enhance-fetch-method-21fc2765f76).
-
-tldr;
-
 This library provides a set of handful `fetch` enhancement as well as gives you the idea to create a `fetch` method that:
 
 - Fetch data from server, of course
